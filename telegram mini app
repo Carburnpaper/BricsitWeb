@@ -1,0 +1,20 @@
+const { Telegraf } = require('telegraf');
+
+// Replace with the token you get from @BotFather
+const bot = new Telegraf('YOUR_BOT_TOKEN');
+
+// The URL where your index.html is hosted (must be HTTPS)
+const webAppUrl = 'https://your-deployed-app.vercel.app';
+
+bot.start((ctx) => {
+  ctx.reply('Welcome! Click the button below to launch the app:', {
+    reply_markup: {
+      inline_keyboard: [
+        [{ text: "Open Mini App", web_app: { url: webAppUrl } }]
+      ]
+    }
+  });
+});
+
+bot.launch();
+console.log('Bot is running...');
