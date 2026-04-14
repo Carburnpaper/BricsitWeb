@@ -109,7 +109,7 @@
             document.getElementById('resultBox').style.display = "block";
 
             // WhatsApp Integration
-            let myPhone = "234XXXXXXXXXX"; // REPLACE WITH YOUR PHONE NUMBER (e.g. 234803...)
+            let myPhone = "2348035847685"; // REPLACE WITH YOUR PHONE NUMBER (e.g. 234803...)
             let msg = "Hello BRICS IT! I'd like to place an order:%0A" + 
                       "- Item: " + w + "x" + h + " inches%0A" +
                       "- Quantity: " + qty + "%0A" +
